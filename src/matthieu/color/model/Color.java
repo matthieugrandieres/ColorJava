@@ -78,7 +78,7 @@ public class Color {
     }
 
     public static void main(String[] args){
-        //Color rgb1 = new Color(255, 255, 255);
+        Color rgb1 = new Color(255, 255, 255);
         //System.out.println(rgb1.getRed());
         //System.out.println(rgb1);
         //Color hex1 = new Color("#A23456");
