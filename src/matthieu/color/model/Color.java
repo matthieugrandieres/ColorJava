@@ -77,12 +77,8 @@ public class Color {
         return "[value=" + this.hexValue + "]" + "r=" + this.red + "]" + "g=" + this.green + "]" + "b=" + this.blue + "]";
     }
 
-    public static void main(String[] args){
-        Color rgb1 = new Color(255, 255, 255);
-        //System.out.println(rgb1.getRed());
-        //System.out.println(rgb1);
-        //Color hex1 = new Color("#A23456");
-        //Color hex2 = new Color("#123457");
-        //System.out.println(hex1.getHexValue().substring(0,1));
+    public int getHexLenght(){
+        return hexValue.length();
     }
+
 }
