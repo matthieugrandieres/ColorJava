@@ -39,18 +39,17 @@ public class Color {
         lettres.add("E");
         lettres.add("F");
 
-        System.out.println(lettres);
+        System.out.println(this.hexValue.substring(1, 2).getClass().getSimpleName());
 
         for (int i = 1; i < this.hexValue.length(); i++) {
-            if (Integer.parseInt(this.hexValue.substring(i, i + 1)) < 0 || Integer.parseInt(this.hexValue.substring(i, i + 1)) > 9){
-                throw new IllegalArgumentException("Problème de contenu");
-            }
-            /*
-            if (!this.hexValue.substring(i, i + 1).equals("A")) {
+            if (Integer.parseInt(this.hexValue.substring(i, i + 1)) < 0 ||
+                Integer.parseInt(this.hexValue.substring(i, i + 1)) > 9 )
+            {
                 throw new IllegalArgumentException("Problème de contenu");
             }
 
-            System.out.println(i);*/
+            System.out.println(i);
+
         }
     }
 
@@ -62,12 +61,16 @@ public class Color {
         return red;
     }
 
+    public void setRed(int red) {
+        this.red = red;
+    }
+
     public int getBlue() {
-        return this.blue;
+        return blue;
     }
 
     public int getGreen() {
-        return this.green;
+        return green;
     }
 
     public String toString() {
@@ -78,7 +81,7 @@ public class Color {
         //Color rgb1 = new Color(255, 255, 255);
         //System.out.println(rgb1.getRed());
         //System.out.println(rgb1);
-        Color hex1 = new Color("#123456");
+        //Color hex1 = new Color("#A23456");
         //Color hex2 = new Color("#123457");
         //System.out.println(hex1.getHexValue().substring(0,1));
     }
